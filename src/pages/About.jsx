@@ -1,44 +1,52 @@
+// src/pages/About.tsx
 import React from 'react';
+import Header from '../components/Header';
 import Button from '../components/Button';
 
 const About = () => {
   return (
-    <div>
+    <>
+      <Header />
+
       {/* About Hero Section */}
-      <section className="relative h-[400px] bg-cover bg-center flex items-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')" }}>
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="container mx-auto px-4 z-10">
-          <div className="max-w-xl text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Nova Health Ltd</h1>
-            <p className="text-lg">Learn about our company and our commitment to quality housing in Kanombe.</p>
-          </div>
+      <section
+        className="relative h-[400px] bg-cover bg-center flex items-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-6 text-center z-10 text-white">
+          <h1 className="text-4xl md:text-5xl font-serif mb-4 text-primary">About Nova Health Ltd</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            Learn about our company and our commitment to quality housing in Kanombe.
+          </p>
         </div>
       </section>
 
       {/* Company Overview */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
-                alt="Nova Health Building" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-              <p className="text-gray-600 mb-4">
-                Founded in 2018, Nova Health Ltd has established itself as a premier real estate developer in Kigali, Rwanda. We specialize in building high-quality residential apartments that combine modern design with practical functionality.
-              </p>
-              <p className="text-gray-600 mb-4">
-                Our flagship development in Kanombe near the airport features two-floor and ground floor apartments designed to meet the needs of both local residents and expatriates looking for comfortable housing options.
-              </p>
-              <p className="text-gray-600 mb-6">
-                At Nova Health Ltd, we believe that everyone deserves a comfortable and well-designed living space. Our mission is to provide affordable luxury housing that enhances the quality of life for our residents.
-              </p>
-              <Button>Learn More</Button>
-            </div>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2 overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-500">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="Nova Health Building"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-serif mb-6">Our Story</h2>
+            <p className="text-gray-700 mb-4">
+              Founded in 2018, Nova Health Ltd has established itself as a premier real estate developer in Kigali, Rwanda. We specialize in building high‑quality residential apartments that combine modern design with practical functionality.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Our flagship development in Kanombe near the airport features two‑floor and ground‑floor apartments designed to meet the needs of both local residents and expatriates looking for comfortable housing options.
+            </p>
+            <p className="text-gray-700 mb-6">
+              At Nova Health Ltd, we believe everyone deserves a comfortable and well‑designed living space. Our mission is to provide affordable luxury housing that enhances our residents’ quality of life.
+            </p>
+            <Button>Learn More</Button>
           </div>
         </div>
       </section>
@@ -94,70 +102,55 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet the dedicated professionals who make Nova Health Ltd a leader in residential real estate development.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
-                alt="CEO" 
-                className="w-full h-64 object-cover object-center"
-              />
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 text-center mb-12">
+          <h2 className="text-3xl font-serif mb-4">Meet Our Leadership</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            The professionals driving Nova Health Ltd forward.
+          </p>
+        </div>
+        <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              name: 'John Doe',
+              role: 'CEO',
+              img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80',
+              desc: 'With 15+ years in real estate, John leads Nova Health’s vision and growth.',
+            },
+            {
+              name: 'Jane Smith',
+              role: 'COO',
+              img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=688&q=80',
+              desc: 'Jane ensures operational excellence and on-time delivery for every project.',
+            },
+            {
+              name: 'Michael Johnson',
+              role: 'Lead Architect',
+              img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80',
+              desc: 'Michael crafts innovative designs that balance form, function, and comfort.',
+            },
+          ].map(({ name, role, img, desc }) => (
+            <div
+              key={name}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-500"
+            >
+              <img src={img} alt={name} className="w-full h-64 object-cover" />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">John Doe</h3>
-                <p className="text-primary font-medium mb-3">Chief Executive Officer</p>
-                <p className="text-gray-600">
-                  With over 15 years of experience in real estate development, John leads our company with vision and expertise.
-                </p>
+                <h3 className="text-xl font-semibold mb-1">{name}</h3>
+                <p className="text-primary mb-3">{role}</p>
+                <p className="text-gray-700">{desc}</p>
               </div>
             </div>
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" 
-                alt="COO" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Jane Smith</h3>
-                <p className="text-primary font-medium mb-3">Chief Operations Officer</p>
-                <p className="text-gray-600">
-                  Jane oversees all operational aspects of our projects, ensuring timely delivery and quality standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
-                alt="Architect" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Michael Johnson</h3>
-                <p className="text-primary font-medium mb-3">Lead Architect</p>
-                <p className="text-gray-600">
-                  Michael brings innovative design solutions that maximize comfort and functionality in all our properties.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Find Your Dream Home?</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Explore our available apartments in Kanombe near the airport. Whether you're looking to rent or buy, we have options to suit your needs.
+      <section className="py-16 bg-primary text-white text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-serif mb-4">Ready to Find Your Dream Home?</h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
+            Explore our apartments in Kanombe. Rent or buy — we have the perfect option for you.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button primary={false}>View Properties</Button>
@@ -165,7 +158,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
