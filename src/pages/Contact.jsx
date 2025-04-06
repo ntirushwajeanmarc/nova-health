@@ -120,12 +120,12 @@ const Contact = () => {
                 <iframe
                   title="Kanombe Location"
                   className="w-full h-[300px] rounded-lg border-0 shadow-lg"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1234567890123!2d30.123456!3d-1.234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d8f0f0f0f0f0f0%3A0xabcdef1234567890!2sKanombe%20Airport%2C%20Kigali!5e0!3m2!1sen!2srw!4v0000000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5089967050483!2d30.174369715211367!3d-1.9822465983639818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19db595f2e80a6c3%3A0x7091830a6abe9317!2sNOVA%20VILLAGE!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
                   allowFullScreen=""
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 />
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+              </div>              <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                 <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
                 <ul className="space-y-4">
                   <li className="flex justify-between">
