@@ -82,6 +82,11 @@ To build the project for production:
 ```bash
 npm run build
 ```
+## for docker files
+-docker build -t nova-health .
+-docker run -p 3000:80 nova-health
+ 
+--------------------------------------------
 
 The build artifacts will be stored in the `dist/` directory.
 
