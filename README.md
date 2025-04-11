@@ -83,8 +83,9 @@ To build the project for production:
 npm run build
 ```
 ## for docker files
--docker build -t nova-health .
--docker run -p 3000:80 nova-health
+```docker build -t nova-health .
+docker run -p 3000:80 nova-health
+```
  
 --------------------------------------------
 
